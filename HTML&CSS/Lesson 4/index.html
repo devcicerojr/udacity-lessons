@@ -5,16 +5,21 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Puppy Portfolio</title>
+	<link href="https://fonts.googleapis.com/css?family=Lato:100,300" rel="stylesheet">
+	<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+
 </head>
 <body>
 	<div class="container">
 		<div class="row">
 			<div class="col-md-6">
-				<img class="img-responsive" src="http://lorempixel.com/120/120/people" alt="Logo">
+				<img class="img-responsive title-logo" src="http://lorempixel.com/120/120/people" alt="Logo">
 			</div>
 			<div class="col-md-6 text-right text-uppercase">
-				<h1>Jane Doette</h1>
+				<h1 class="text-thin super-title">Jane Doette</h1>
 				<h4>Front-end-Ninja</h4>
 			</div>
 		</div>
@@ -30,26 +35,79 @@
 		</div>
 		<div class="row">
 			<div class="col-md-12">
-				<h2>Featured Work</h2>
+				<h2 class="text-muted">Featured Work</h2>
 			</div>
 		</div>
-		<div class="row">
+		<div class="row text-center">
 			<div class="col-md-4">
-				<img class="img-responsive" src="http://lorempixel.com/600/600/cats" alt="Cat">
+				<img class="img-responsive" data-toggle="modal" data-target="#project1" src="http://lorempixel.com/600/600/cats" alt="Cat">
 				<h3 class="text-uppercase">Cat</h3>
 				<p>https://github.com/udacity/appify</p>
 			</div>
 			<div class="col-md-4">
-				<img class="img-responsive" src="http://lorempixel.com/600/600/city" alt="City">
+				<img class="img-responsive" data-toggle="modal" data-target="#project2" src="http://lorempixel.com/600/600/city" alt="City">
 				<h3 class="text-uppercase">City</h3>
 				<p>https://github.com/udacity/sunflower</p>
 			</div>
 			<div class="col-md-4">
-				<img class="img-responsive" src="http://lorempixel.com/600/600/food" alt="Food">
+				<img class="img-responsive" data-toggle="modal" data-target="#project3" src="http://lorempixel.com/600/600/food" alt="Food">
 				<h3 class="text-uppercase">Food</h3>
 				<p>https://github.com/udacity/bukeh</p>
 			</div>
 		</div>
 	</div>
+
+
+	<div class="modal fade" id="project1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="myModalLabel">Favorite App Page 1</h4>
+                </div>
+                <div class="modal-body">
+                    <img class="img-responsive" src="http://lorempixel.com/600/600/cats">
+                    This was my first project in this class. I learned a lot about HTML and CSS.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="project2" tabindex="-1" role="dialog" aria-labelledby="myModalLabe2" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="myModalLabe2">Favorite App Page 2</h4>
+                </div>
+                <div class="modal-body">
+                    <img class="img-responsive" src="http://lorempixel.com/600/600/city">
+                    This was my first project in this class. I learned a lot about HTML and CSS.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="project3" tabindex="-1" role="dialog" aria-labelledby="myModalLabe3" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="myModalLabe3">Favorite App Page 3</h4>
+                </div>
+                <div class="modal-body">
+                    <img class="img-responsive" src="http://lorempixel.com/600/600/food">
+                    This was my first project in this class. I learned a lot about HTML and CSS.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
 </body>
 </html>
